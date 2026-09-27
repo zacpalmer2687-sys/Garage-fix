@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GarageFix | DIY Auto Repair</title>
+<meta name="description" content="Step-by-step DIY automotive repair guides, diagnostics, maintenance checklists and tools.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">GF</span><span>Garage<span>Fix</span></span></div>
+  <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+  <nav id="nav">
+    <a href="#guides">Repair Guides</a>
+    <a href="#diagnostics">Diagnostics</a>
+    <a href="#tools">Tools</a>
+    <a href="#membership">Membership</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">DIY AUTO REPAIR • BUILT FOR THE GARAGE</div>
+    <h1>Fix your vehicle.<br><span>Keep your money.</span></h1>
+    <p>Clear, step-by-step repair guides for everyday cars, trucks and SUVs—without the dealership language.</p>
+    <div class="hero-buttons">
+      <a class="btn primary" href="#guides">Browse Free Guides</a>
+      <a class="btn ghost" href="#membership">See Membership</a>
+    </div>
+    <div class="trust"><span>✓ Step-by-step</span><span>✓ Beginner friendly</span><span>✓ Garage focused</span></div>
+  </div>
+  <div class="hero-card">
+    <div class="card-top">POPULAR GUIDE</div>
+    <h3>Brake Pad & Rotor Replacement</h3>
+    <p>Tools • Parts • Steps • Inspection • Road test</p>
+    <div class="progress"><i></i></div>
+    <small>Free preview</small>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong>100+</strong><span>Repair topics planned</span></div>
+  <div><strong>Step-by-step</strong><span>Plain-English instructions</span></div>
+  <div><strong>$0</strong><span>To start with free guides</span></div>
+</section>
+
+<section id="guides" class="section">
+  <div class="section-head">
+    <div><div class="eyebrow">REPAIR LIBRARY</div><h2>Start with a repair.</h2></div>
+    <a href="#" class="text-link">View all →</a>
+  </div>
+  <div class="grid">
+    <article class="guide"><div class="icon">🛑</div><h3>Brakes</h3><p>Pads, rotors, calipers, bleeding and diagnosis.</p><button onclick="showGuide('Brake Pad & Rotor Replacement')">Open guide →</button></article>
+    <article class="guide"><div class="icon">🔋</div><h3>Starting & Charging</h3><p>Battery, starter, alternator and no-crank diagnosis.</p><button onclick="showGuide('No-Crank Diagnosis')">Open guide →</button></article>
+    <article class="guide"><div class="icon">🌡️</div><h3>Cooling System</h3><p>Thermostats, leaks, fans, radiators and overheating.</p><button onclick="showGuide('Overheating Diagnosis')">Open guide →</button></article>
+    <article class="guide"><div class="icon">🛞</div><h3>Suspension</h3><p>Shocks, struts, ball joints, tie rods and sway links.</p><button onclick="showGuide('Front-End Inspection')">Open guide →</button></article>
+    <article class="guide"><div class="icon">⚡</div><h3>Electrical</h3><p>Fuses, wiring, voltage drops, lights and accessories.</p><button onclick="showGuide('Voltage Drop Testing')">Open guide →</button></article>
+    <article class="guide"><div class="icon">🔎</div><h3>OBD-II Diagnostics</h3><p>Understand codes and test the actual problem.</p><button onclick="showGuide('Check Engine Diagnosis')">Open guide →</button></article>
+  </div>
+</section>
+
+<section id="diagnostics" class="dark-section">
+  <div class="section-head"><div><div class="eyebrow">DIAGNOSTICS</div><h2>Stop guessing. Start testing.</h2></div></div>
+  <div class="diag-grid">
+    <div><b>01</b><h3>Describe the symptom</h3><p>When does it happen? Cold, hot, braking, turning, accelerating?</p></div>
+    <div><b>02</b><h3>Inspect first</h3><p>Look for loose connectors, damaged wiring, leaks, broken parts and obvious causes.</p></div>
+    <div><b>03</b><h3>Test the system</h3><p>Use a scanner, multimeter or pressure tester instead of replacing parts blindly.</p></div>
+    <div><b>04</b><h3>Repair & verify</h3><p>Fix the root cause, clear codes when appropriate and road-test safely.</p></div>
+  </div>
+</section>
+
+<section id="tools" class="section">
+  <div class="section-head"><div><div class="eyebrow">GARAGE TOOLBOX</div><h2>Tools worth having.</h2></div></div>
+  <div class="tool-list">
+    <div>🔧 Metric & SAE socket set</div><div>🔧 Breaker bar</div><div>⚙️ Torque wrench</div>
+    <div>🔌 Digital multimeter</div><div>📟 OBD-II scanner</div><div>💡 Test light</div>
+  </div>
+</section>
+
+<section id="membership" class="membership">
+  <div class="membership-copy">
+    <div class="eyebrow">GARAGEFIX PLUS</div>
+    <h2>Your digital repair library.</h2>
+    <p>One membership for detailed repair instructions, diagnostic flowcharts, printable checklists and new guides.</p>
+    <ul><li>Full repair library</li><li>Printable checklists</li><li>Diagnostic flowcharts</li><li>New guides added regularly</li></ul>
+  </div>
+  <div class="price-card">
+    <div class="price">$12.99 <small>/ month</small></div>
+    <p>7-day free trial</p>
+    <button class="btn primary" onclick="alert('Membership checkout will be connected here when payments are added.')">Start Free Trial</button>
+    <small>No payment processing is connected in this prototype.</small>
+  </div>
+</section>
+
+<section class="safety">
+  <h3>⚠️ Important</h3>
+  <p>Vehicle procedures, torque specifications, fluids, service intervals and safety requirements vary by year, make and model. Always use the vehicle manufacturer's service information for exact specifications. Never work under a vehicle supported only by a jack.</p>
+</section>
+</main>
+
+<footer><div class="brand">Garage<span>Fix</span></div><p>DIY auto repair made easier.</p><p>© 2026 GarageFix</p></footer>
+
+<div id="modal" class="modal" onclick="closeGuide(event)">
+  <div class="modal-box">
+    <button class="close" onclick="hideGuide()">×</button>
+    <div class="eyebrow">FREE GUIDE PREVIEW</div>
+    <h2 id="modalTitle"></h2>
+    <div id="modalBody"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
